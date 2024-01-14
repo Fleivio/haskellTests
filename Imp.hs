@@ -1,4 +1,7 @@
-module Imp((=:), ($=), (+=), (-=), (\=), (*=), liftST, while) where
+module Imp((=:), (=.), ($=), 
+    yield, ref, run, liftST, while,
+    (+=), (-=), (\=), (*=)
+    ) where
 
 import Control.Monad.ST
 import Control.Monad
