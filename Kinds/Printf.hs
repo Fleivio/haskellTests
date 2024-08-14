@@ -3,7 +3,6 @@
 import GHC.TypeLits
 import Data.Kind
 import Data.Proxy
-import Distribution.Simple (KnownExtension(AllowAmbiguousTypes, TypeApplications))
 
 data (a :: k1) % (b :: k2)
 infixr 5 %
@@ -33,5 +32,5 @@ printf = format @a ""
 
 main :: IO ()
 main = do
-  putStrLn $ printf @("Bom Dia, " % String % ", hoje é dia " % Int % "") "Flavio" 11
+  putStrLn $ printf @("Bom Dia, " % String % ", hoje é dia " % Int % " porra") "Flavio" 12
 
