@@ -1,5 +1,4 @@
 {-#LANGUAGE FunctionalDependencies, UndecidableInstances #-}
-import Distribution.Simple (KnownExtension(FunctionalDependencies, UndecidableInstances))
 
 listToMaybe :: [a] -> Maybe a
 listToMaybe [] = Nothing

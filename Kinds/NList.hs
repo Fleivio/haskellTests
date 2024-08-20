@@ -5,7 +5,6 @@ import Data.Kind
 import GHC.TypeLits
 import Data.Type.Equality
 import Unsafe.Coerce
-import Language.Haskell.TH (Overlap(Incoherent), Extension (OverlappingInstances, IncoherentInstances))
 
 type NList :: Type -> Natural -> Type
 data NList a s where
